@@ -14,26 +14,19 @@ class Post extends Component {
           this.setState({
             post: res.data
           })
-          
+          console.log(res)
       })
    
   }
   render() {
-    const post = this.state.post ? (
-      <div className="post">
-        <h4 className="centre">{this.state.post.title}</h4>
-        <p>{this.state.post.body}</p>
-      </div>
-    ) : (
-      <div className="centre">Loading post...</div>
-    )
+
 
     return (
       <div className="container">
-        { post }
+        <h4></h4>
       </div>
     )
   }
 }
-
+// ODCINEK #31 05:26
 export default Post

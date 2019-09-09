@@ -35,5 +35,5 @@ class Post extends Component {
     )
   }
 }
-
+// ODCINEK #31 05:26
 export default Post

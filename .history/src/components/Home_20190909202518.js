@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import Pokeball from '../pokeball.png'
+import Pokeball from '.../img/pokeball.png'
 
 class Home extends Component {
   state = {
@@ -26,7 +26,7 @@ class Home extends Component {
             <img src={Pokeball} alt="pokeball" />
             <div className="card-content">
               <Link to={'/' + post.id}>
-                <span className="card-title red-text">{post.title}</span>
+                <span className="card-title">{post.title}</span>
               </Link>
               <p>{post.body}</p>
             </div>
@@ -38,7 +38,7 @@ class Home extends Component {
     )
 
     return(
-      <div className="container home">
+      <div className="container">
         <h4 className="center">Home</h4>
           {postList}
       </div>

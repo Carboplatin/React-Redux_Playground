@@ -8,7 +8,6 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Post from './components/Post'
 
-
 class App extends Component {
   state = {
     todos: [
@@ -40,19 +39,19 @@ class App extends Component {
       return (
         
           <div className="todo-app container">
-            <BrowserRouter>
-              <Navbar/>
-              <Switch>
-                <Route exact path='/' component={Home}/>  
-                <Route path='/about' component={About}/>  
-                <Route path='/contact' component={Contact}/>  
-                <Route path='/:post_id' component={Post} />
-              </Switch>
-              
-                  <h1 className="center blue-text">Todo's</h1>
-                    <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
-                    <AddTodo addTodo={this.addTodo}/>
-            </BrowserRouter>
+          <BrowserRouter>
+            <Navbar/>
+            <Switch>
+              <Route exact path='/' component={Home}/>  
+              <Route path='/about' component={About}/>  
+              <Route path='/contact' component={Contact}/>  
+              <Route path='/:post_id' component={Post} />
+            </Switch>
+            
+                <h1 className="center blue-text">Todo's</h1>
+                  <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+                  <AddTodo addTodo={this.addTodo}/>
+          </BrowserRouter>
           </div>
         
       );

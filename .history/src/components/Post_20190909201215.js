@@ -21,7 +21,7 @@ class Post extends Component {
   render() {
     const post = this.state.post ? (
       <div className="post">
-        <h4 className="centre">{this.state.post.title}</h4>
+        <h4 className="centre">{this.state.title}</h4>
         <p>{this.state.post.body}</p>
       </div>
     ) : (
@@ -35,5 +35,5 @@ class Post extends Component {
     )
   }
 }
-
+// ODCINEK #31 05:26
 export default Post
