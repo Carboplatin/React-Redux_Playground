@@ -6,8 +6,7 @@ import { connect } from 'react-redux'
 class Home extends Component {
   
   render(){
-    console.log(this.props)
-    const { posts } = this.props;
+    const { posts } = this.state;
     const postList = posts.length ? (
       posts.map(post => {
         return(
