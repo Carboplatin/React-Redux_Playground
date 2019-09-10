@@ -47,12 +47,15 @@ class App extends Component {
                 <Route path='/about' component={About}/>  
                 <Route path='/contact' component={Contact}/>  
                 <Route path='/:post_id' component={Post} />
-              </Switch>       
+              </Switch>
+              
+                  <h1 className="center blue-text">Todo's</h1>
+                    <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+                    <AddTodo addTodo={this.addTodo}/>
             </BrowserRouter>
           </div>
         
       );
     }      
 }
-                 
 export default App;
